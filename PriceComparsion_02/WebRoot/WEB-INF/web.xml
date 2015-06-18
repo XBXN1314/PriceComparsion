@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoadIndexBookServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.LoadIndexBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoadIndexBookImgServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.LoadIndexBookImgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetBookInfoServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.GetBookInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailInfoServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.DetailInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetBookDetailInfoServlet0</servlet-name>
+    <servlet-class>ecust.cs.servlet.GetBookDetailInfoServlet0</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetDetailInfoServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.GetDetailInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCategoryInfoServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.GetCategoryInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SaveCategoryServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.SaveCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCategoryServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.GetCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailInfoBasedOnSearchServlet</servlet-name>
+    <servlet-class>ecust.cs.servlet.DetailInfoBasedOnSearchServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadIndexBookServlet</servlet-name>
+    <url-pattern>/LoadIndexBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadIndexBookImgServlet</servlet-name>
+    <url-pattern>/LoadIndexBookImgServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBookInfoServlet</servlet-name>
+    <url-pattern>/GetBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailInfoServlet</servlet-name>
+    <url-pattern>/DetailInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBookDetailInfoServlet0</servlet-name>
+    <url-pattern>/GetBookDetailInfoServlet0</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDetailInfoServlet</servlet-name>
+    <url-pattern>/GetDetailInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCategoryInfoServlet</servlet-name>
+    <url-pattern>/GetCategoryInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveCategoryServlet</servlet-name>
+    <url-pattern>/SaveCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCategoryServlet</servlet-name>
+    <url-pattern>/GetCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailInfoBasedOnSearchServlet</servlet-name>
+    <url-pattern>/DetailInfoBasedOnSearchServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

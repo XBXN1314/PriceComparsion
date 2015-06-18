@@ -1,0 +1,49 @@
+package ecust.cs.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ecust.cs.dao.BookInfoDao;
+import ecust.cs.model.AllInfo;
+
+public class LoadIndexBookServlet extends HttpServlet {
+
+	
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		resp.setCharacterEncoding("UTF-8");
+System.out.println("asd");
+		PrintWriter out = resp.getWriter();
+		
+		List<AllInfo> allInfoList = BookInfoDao.getIndexBookRandom();
+		
+		int count = 1;
+		StringBuffer xml = new StringBuffer();
+		
+		xml.append("<root>");
+		for(AllInfo ai : allInfoList){
+			
+			xml.append("<bookName" + count +  ">" + ai.getBookName() + "</bookName>");
+			xml.append("<author" + count +  ">" + ai.getAuthor() + "</author>");
+			xml.append("<picUrl" + count +  ">" + ai.getPicURL() + "</picUrl>");
+			count ++;
+			
+		}
+		xml.append("</root>");
+System.out.println(xml.toString());		
+		out.print(xml.toString());
+		
+	}
+
+	public void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		this.doGet(req, resp);
+	}
+
+}
